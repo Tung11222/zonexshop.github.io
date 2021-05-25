@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --white-color: white;
+    --blue-color: powderblue;
+    --red-color: tomato;
+    --black-color: black;
+    --gray-color: gray;
+    --thinblack-color: #999;
+}
+body, html {
+    height: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+/* Login */
+h1 {
+    margin-bottom: 4rem;
+    font-size: 300%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif !important;
+}
+.main--container {
+    background-image: url("https://scr.vn/wp-content/uploads/2020/07/C%E1%BA%A3nh-thi%C3%AAn-nhi%C3%AAn-%C4%91%E1%BA%B9p-nh%E1%BA%A5t-scaled.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.main--cover {
+    background-color: var(--white-color);
+    width: 400px;
+    height: 95%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 20px;
+}
+.main--contain {
+    margin-top: 4rem;
+}
+.main__items {
+    margin-bottom: 4rem;
+}
+.login--1, 
+.login--2,
+.login--3,
+.login--4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login--1 label {
+    position: relative;
+    left: -8.5rem;
+    font-weight: bold;
+}
+.login--2 label {
+    position: relative;
+    left: -8.5rem;
+    font-weight: bold;
+}
+.login--3 label {
+    position: relative;
+    left: -8.5rem;
+    font-weight: bold;
+}
+.login--4 label {
+    position: relative;
+    left: -7.8rem;
+    font-weight: bold;
+}
+.login--1 input, 
+.login--2 input,
+.login--3 input,
+.login--4 input {
+    width: 350px;
+    outline: none;
+    border-color: transparent transparent black transparent;
+    border-width: 1px;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: calc(0.8rem + 5%);
+}
+.login--1 i,
+.login--2 i,
+.login--3 i,
+.login--4 i {
+    position: relative;
+    left: -10rem;
+    top: -1.6rem;
+}
+.main__top img {
+    width: 30%;
+    position: relative;
+    top: -3.2rem;
+    z-index: 10;
+    background-color: var(--white-color);
+    padding: 0 1rem;
+}
+.main__top .line {
+    margin: 0 auto;
+    z-index: 5;
+    display: block;
+    position: relative;
+    top: -4rem;
+    width: 350px;
+    height: 1px;
+    background-color: var(--black-color);
+}
+.main__form a {
+    font-size: calc(100% - 0.2rem);
+    position: relative;
+    top: -0.5rem;
+    right: -7rem;
+    color: var(--gray-color);
+    transition: all .25s ease-out;
+}
+.main__form a:hover {
+    color: var(--black-color);
+}
+.main__login {
+    transform: translate(0, -50%);
+}
+.main__signup {
+    position: relative;
+    top: -8rem;
+}
+.main__signup p {
+    color: var(--black-color);
+}
+.text__2 a{
+    font-size: calc(1rem + 5%);
+    color: #006600;
+    transition: all .25s linear;
+    position: relative;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text__2 a:hover {
+    color: var(--red-color);
+}
+
+.ti-arrow-right {
+    padding-left: 0.3rem;
+}
+
+.main__button--1 button {
+    position: relative;
+    top: -2rem;
+    width: 350px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #00CCFF, #9966CC, #FF6600);
+}
+.main__button--1:hover button {
+    transition: all .25s linear;
+    color: var(--blue-color);
+}
+.main__icon--cover {
+    position: relative;
+    top: -1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__icon {
+    margin: 2rem 0.5rem;
+    font-weight: bold;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: calc(1.6rem + 10%);
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all .25s linear;
+}
+.main__icon:hover {
+    opacity: 1;
+}
+.icon--1 {
+    background-color: #0066CC;
+}
+.icon--2 {
+    background-color: #33CCFF;
+}
+.icon--3 {
+    background-color: #CC0000;
+}
+
+
+
+/* Sign Up */
+.items__child--2 .main__form {
+    position: relative;
+    top: -2rem;
+}
+.items__child--2 .login--1 label{
+    position: relative;
+    left: -9.5rem !important;
+}
+.ti-angle-left {
+    position: relative;
+    font-size: calc(1.2rem + 50%);
+    left: -9rem;
+    cursor: pointer;
+}
+.main__button--2 button {
+    position: relative;
+    top: -5rem;
+    width: 350px;
+    padding: 1rem 0;
+    border: none;
+    font-size: calc(0.8rem + 5%);
+    border-radius: 30px;
+    outline: none;
+    font-weight: bold;
+    color: var(--white-color);
+    cursor: pointer;
+    background-image: linear-gradient(to right, #00CCFF, #9966CC, #FF6600);
+}
+.main__button--2:hover button {
+    transition: all .25s linear;
+    color: var(--blue-color);
+}
+.text--sub {
+    width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.text--desc {
+    position: relative;
+    top: -8rem;
+}
+.text--desc a {
+    text-decoration: underline !important;
+    color: var(--black-color);
+}
+.text--desc a:active {
+    color: var(--red-color);
+}
+
+
+
+
+
+/* Check */
+.slide-contain {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.slider {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+}
+.slides {
+    width: 500%;
+    height: 800px;
+    display: flex;
+}
+#radio1,
+#radio2 {
+    display: none;
+}
+.slide {
+    width: 20%;
+    transition: all 0.5s;
+}
+
+.items {
+    width: 500px;
+    height: 800px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.items_1 {
+    background-color: red;
+}
+.items_2 {
+    background-color: blue;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 500px;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid blue;
+    position: relative;
+    top: -46.2rem;
+    left: -6.8rem;
+    cursor: pointer;
+    opacity: 0;
+}
+.manual-btn2 {
+    position: relative;
+    top: -6.8rem;
+    left: -4rem;
+    border: 1px solid black;
+    cursor: pointer;
+    opacity: 0;
+    transition:  all .3s;
+    padding: 0.5rem 0;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.manual-btn:hover {
+    background-color: #40D3DC;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+
+
+
